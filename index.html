@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"  http-equiv="content-type" content="text/html; width=device-width, initial-scale=1 charset=utf-8">
+<link rel="stylesheet" href="style.css">
+<script src="calculations.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <form name="calculator">
+    <!--Govju skaits-->
+      <div class="row">
+        <div class="col-25">
+          <label for="cows">Govju skaits</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="cows" name="numbercows" placeholder="Ievadi govju skaitu" value= "120" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="sausnazale">Sausna zāles SKB (kg) </label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="sausnazale" name="sausnazalezb" placeholder="Ievadi sausnas kg" value= "9.77" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="sausnakukuruza">Sausna kukurūzas SKB (kg) </label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="sausnakukuruza" name="sausnakukskb" placeholder="Ievadi sausnas kg" value= "6.95" required>
+        </div>
+      </div>
+
+    <!--Govju skaits-->
+      <div class="row">
+        <div class="col-25">
+          <label for="sausnaone">Sausna I</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="sausnaone" name="sausna1" placeholder="Ievadi sausnas I %" value="43" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="sausnatwo">Sausna II</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="sausnatwo" name="sausna2" placeholder="Ievadi sausnas II %" value="39" required>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <button id="btn" type="button" onclick="calculate()">Aprēķini</button>
+      </div>
+    </form>
+  </div>
+
+  <h3>Patēriņš(kg/dienā)</h3>
+  <div class="row">
+    <div class="col-75">
+        <table><tr>
+              <th>Nosaukums</th>
+              <th>Daudzums</th> 
+            </tr>
+            <tr>
+                <td>SKB kopā</td>
+                <td> <p id="skb"></p></td>
+              </tr>
+            <tr>
+            <tr>
+              <td>Zāles SKB</td>
+              <td><p id="zalesskb"></p></td>
+            </tr>
+            <tr>
+              <td>Kukurūzas SKB</td>
+              <td><p id="kukuruzaskb"></p></td>
+            </tr>
+            <tr>
+                <td>BL kopā</td>
+                <td><p id="blkopa"></p></td>
+              </tr>
+              <tr>
+                <td>BL zāle</td>
+                <td><p id="blzale"></p></td>
+              </tr>
+              <tr>
+                <td>BL kukuruza</td>
+                <td><p id="blkukur"></p></td>
+              </tr>
+           
+          </table>
+  </div>
+  </div>
+
+
+</body>
+</html>
